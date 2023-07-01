@@ -6,7 +6,7 @@ PDF Invoices;A script that reads invoice records from Excel files and automatica
 News Site;This app accesses news about a particular topic and sends them by email.;https://github.com/adityaacodes/news-api-email;5.png
 Weather API;A REST API built with Python and Flask to serve historical weather data for various cities.;https://github.com/adityaacodes/weather-api;6.png
 Weather Forecast Data App;A weather forecasting web app made in python.;https://github.com/adityaacodes/weather-forecast-data-app;7.png
-Tour Scraper;A program that checks a music band's website and sends an email when there are new tours.;https://pythonhow.com;8.png
+Tour Scraper;A program that checks a music band's website and sends an email when there are new tours.;https://github.com/adityaacodes/tour-scraper;8.png
 Helper Chatbot;A chatbot that knows about a specific topic and answers questions regarding that topic.;https://pythonhow.com;9.png
 Open Domain Chatbot;A chatbot built that can discuss anything with a human and is built using the Facebook API.;https://pythonhow.com;10.png
 Webcam Motion Detector;A program that monitors the computer webcam and sends an email when a new object enters the view.;https://github.com/adityaacodes/webcam-motion-detector;11.png
