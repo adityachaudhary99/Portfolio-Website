@@ -24,7 +24,8 @@ with col2:
     and programming. Committed to continuous self-improvement and staying updated with industry advancements.
     <br>
     Looking to connect with experienced professionals and mentors to learn from their expertise and \
-    contribute to impactful data-driven projects. Let's connect and embark on the journey of becoming successful Data Scientists together.
+    contribute to impactful data-driven projects. \
+    Let's connect and embark on the journey of becoming successful Data Scientists together.
     """
     st.write(f"<p style='text-align: center;'> {content} </p>", unsafe_allow_html=True)
 
