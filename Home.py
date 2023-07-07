@@ -64,7 +64,7 @@ df = pandas.read_csv("data.csv", sep=';')
 with col10:
     for index, row in df[:6].iterrows():
         st.markdown(f"<h1 style='text-align: center;'> {row['title']} </h1>", unsafe_allow_html=True)
-        st.markdown(f"<p style='text-align: center;'> {row['description']}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='text-align: center;'> {row['description']} </p>", unsafe_allow_html=True)
         st.image('images/' + row['image'])
         st.markdown(
             f"""<a style='display: block; text-align: center;' href="{row['url']}">Source Code
@@ -74,7 +74,7 @@ with col10:
 with col11:
     for index, row in df[6:12].iterrows():
         st.markdown(f"<h1 style='text-align: center;'> {row['title']} </h1>", unsafe_allow_html=True)
-        st.markdown(f"<p style='text-align: center;'> {row['description']}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='text-align: center;'> {row['description']} </p>", unsafe_allow_html=True)
         st.image('images/' + row['image'])
         st.markdown(
             f"""<a style='display: block; text-align: center;' href="{row['url']}">Source Code
@@ -85,7 +85,7 @@ with col11:
 st.markdown("***")
 for index, row in df[12:].iterrows():
     st.markdown(f"<h1 style='text-align: center;'> {row['title']} </h1>", unsafe_allow_html=True)
-    st.markdown(f"<p style='text-align: center;'> {row['description']}</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='text-align: center;'> {row['description']} </p>", unsafe_allow_html=True)
     st.image('images/' + row['image'])
     st.markdown(
         f"""<a style='display: block; text-align: center;' href="{row['url']}">Source Code

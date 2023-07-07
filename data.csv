@@ -5,9 +5,9 @@ PDF Templates;A script that generates PDF templates of multiple pages given some
 PDF Invoices;A script that reads invoice records from Excel files and automatically generates PDF invoices.;https://github.com/adityaacodes/pdf-invoice-generator;4.png
 News Site;This app accesses news about a particular topic and sends them by email.;https://github.com/adityaacodes/news-api-email;5.png
 Weather API;A REST API built with Python and Flask to serve historical weather data for various cities.;https://github.com/adityaacodes/weather-api;6.png
+Movie Recommendation System;A movie recommendation system with popularity-based | content-based | collaborative-based filtering.;https://deepnote.com/workspace/aditya-4a6f-8b8cefb0-8f92-4825-bea6-6a84075afdcf/project/Movie-Recommendation-System-8c407b82-e37b-42b5-9a36-8879f8cfd10a/notebook/Content-Based%20Filtering-5f50aeb41fdd476f819213691be5c71c;12.png
 Weather Forecast Data App;A weather forecasting web app made in python.;https://github.com/adityaacodes/weather-forecast-data-app;7.png
 Tour Scraper;A program that checks a music band's website and sends an email when there are new tours.;https://github.com/adityaacodes/tour-scraper;8.png
 Webcam Motion Detector;A program that monitors the computer webcam and sends an email when a new object enters the view.;https://github.com/adityaacodes/webcam-motion-detector;9.png
 Student Management System;A desktop PyQt6 GUI app for managing university student data with an SQL database backend.;https://github.com/adityaacodes/student-management-system;10.png
 Hotel Booking App;This app books the available hotels after verifying credit card info and sends reservation confirmation.;https://github.com/adityaacodes/hotel-booking-app;11.png
-Movie Recommendation System;A movie recommendation system with popularity-based | content-based | collaborative-based filtering.;https://deepnote.com/workspace/aditya-4a6f-8b8cefb0-8f92-4825-bea6-6a84075afdcf/project/Movie-Recommendation-System-8c407b82-e37b-42b5-9a36-8879f8cfd10a/notebook/Content-Based%20Filtering-5f50aeb41fdd476f819213691be5c71c;12.png
