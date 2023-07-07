@@ -61,7 +61,7 @@ col10, empty_col, col11 = st.columns([1.5, 0.5, 1.5])
 df = pandas.read_csv("data.csv", sep=';')
 
 with col10:
-    for index, row in df[:5].iterrows():
+    for index, row in df[:6].iterrows():
         st.markdown(f"<h1 style='text-align: center;'> {row['title']} </h1>", unsafe_allow_html=True)
         st.markdown(f"<p style='text-align: center;'> {row['description']}</p>", unsafe_allow_html=True)
         st.image('images/' + row['image'])
@@ -71,7 +71,7 @@ with col10:
         st.markdown("***")
 
 with col11:
-    for index, row in df[5:10].iterrows():
+    for index, row in df[6:12].iterrows():
         st.markdown(f"<h1 style='text-align: center;'> {row['title']} </h1>", unsafe_allow_html=True)
         st.markdown(f"<p style='text-align: center;'> {row['description']}</p>", unsafe_allow_html=True)
         st.image('images/' + row['image'])
@@ -82,7 +82,7 @@ with col11:
 
 
 st.markdown("***")
-for index, row in df[10:].iterrows():
+for index, row in df[12:].iterrows():
     st.markdown(f"<h1 style='text-align: center;'> {row['title']} </h1>", unsafe_allow_html=True)
     st.markdown(f"<p style='text-align: center;'> {row['description']}</p>", unsafe_allow_html=True)
     st.image('images/' + row['image'])
