@@ -31,23 +31,34 @@ with col2:
 
     st.text("")
 
-    col3, col4, col5, col6, col7, col8, col9 = st.columns(7)
-    with col6:
-        connect = st.button(label="Connect")
-        if connect:
-            st.markdown(
-                """<a style='display: block; text-align: center;' href="https://www.linkedin.com/in/adityachaudhary99/">
-                LinkedIn</a>""", unsafe_allow_html=True)
+    col3, col4, col5, col6, col7 = st.columns(5)
+    with col5:
+        connect = st.selectbox(label="", options=("Connect", "LinkedIn", "GitHub", "Twitter"))
+        st.markdown("""
+                        <style>
+                        .big-font {
+                            font-size:30px !important;
+                        }
+                        </style>
+                        """, unsafe_allow_html=True)
+        match connect:
+            case "LinkedIn":
+                st.markdown(
+                    """<a style='display: block; text-align: center;' class="big-font"
+                    href="https://www.linkedin.com/in/adityachaudhary99/">LinkedIn</a>""",
+                    unsafe_allow_html=True)
 
-            st.text("")
+            case "GitHub":
+                st.markdown(
+                    """<a style='display: block; text-align: center;' class="big-font"
+                    href="https://github.com/adityaacodes">GitHub</a>""",
+                    unsafe_allow_html=True)
 
-            st.markdown(
-                """<a style='display: block; text-align: center;' href="https://github.com/adityaacodes">GitHub
-                </a>""", unsafe_allow_html=True)
-
-            st.markdown(
-                """<a style='display: block; text-align: center; font: 20;' href="https://twitter.com/adityaacodes">Twitter
-                </a>""", unsafe_allow_html=True)
+            case "Twitter":
+                st.markdown(
+                    """<a style='display: block; text-align: center; class="big-font" 
+                    href="https://twitter.com/adityaacodes">Twitter</a>""",
+                    unsafe_allow_html=True)
 
 
 st.markdown("***")
@@ -57,27 +68,35 @@ content2 = """
 st.markdown(f"<h2 style='text-align: center;'> {content2} </h2>", unsafe_allow_html=True)
 st.markdown("***")
 
-col10, empty_col, col11 = st.columns([1.5, 0.5, 1.5])
+col8, empty_col, col9 = st.columns([1.5, 0.5, 1.5])
 
 df = pandas.read_csv("data.csv", sep=';')
 
-with col10:
+st.markdown("""
+            <style>
+            .big-font {
+                font-size:22px !important;
+            }
+            </style>
+            """, unsafe_allow_html=True)
+
+with col8:
     for index, row in df[:6].iterrows():
         st.markdown(f"<h1 style='text-align: center;'> {row['title']} </h1>", unsafe_allow_html=True)
         st.markdown(f"<p style='text-align: center;'> {row['description']} </p>", unsafe_allow_html=True)
         st.image('images/' + row['image'])
         st.markdown(
-            f"""<a style='display: block; text-align: center;' href="{row['url']}">Source Code
+            f"""<a style='display: block; text-align: center;' class="big-font" href="{row['url']}">Source Code
                 </a>""", unsafe_allow_html=True)
         st.markdown("***")
 
-with col11:
+with col9:
     for index, row in df[6:12].iterrows():
         st.markdown(f"<h1 style='text-align: center;'> {row['title']} </h1>", unsafe_allow_html=True)
         st.markdown(f"<p style='text-align: center;'> {row['description']} </p>", unsafe_allow_html=True)
         st.image('images/' + row['image'])
         st.markdown(
-            f"""<a style='display: block; text-align: center;' href="{row['url']}">Source Code
+            f"""<a style='display: block; text-align: center;' class="big-font" href="{row['url']}">Source Code
                 </a>""", unsafe_allow_html=True)
         st.markdown("***")
 
@@ -88,7 +107,7 @@ for index, row in df[12:].iterrows():
     st.markdown(f"<p style='text-align: center;'> {row['description']} </p>", unsafe_allow_html=True)
     st.image('images/' + row['image'])
     st.markdown(
-        f"""<a style='display: block; text-align: center;' href="{row['url']}">Source Code
+        f"""<a style='display: block; text-align: center;' class="big-font" href="{row['url']}">Source Code
         </a>""", unsafe_allow_html=True)
     st.markdown("***")
 
