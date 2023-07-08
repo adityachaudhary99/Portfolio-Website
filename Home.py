@@ -55,7 +55,7 @@ with col2:
 
         elif connect == "Twitter":
             st.markdown(
-                """<a style='display: block; text-align: center; class="big-font" 
+                """<a style='display: block; text-align: center;' class="big-font" 
                 href="https://twitter.com/adityaacodes">Twitter</a>""",
                 unsafe_allow_html=True)
 
