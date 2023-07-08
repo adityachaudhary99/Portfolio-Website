@@ -1,5 +1,8 @@
 import streamlit as st
 import pandas
+import sys
+assert sys.version_info >= (3, 11)
+
 
 st.set_page_config(layout="wide")
 
