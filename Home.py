@@ -41,24 +41,23 @@ with col2:
                         }
                         </style>
                         """, unsafe_allow_html=True)
-        match connect:
-            case "LinkedIn":
-                st.markdown(
-                    """<a style='display: block; text-align: center;' class="big-font"
-                    href="https://www.linkedin.com/in/adityachaudhary99/">LinkedIn</a>""",
-                    unsafe_allow_html=True)
+        if connect == "LinkedIn":
+            st.markdown(
+                """<a style='display: block; text-align: center;' class="big-font"
+                href="https://www.linkedin.com/in/adityachaudhary99/">LinkedIn</a>""",
+                unsafe_allow_html=True)
 
-            case "GitHub":
-                st.markdown(
-                    """<a style='display: block; text-align: center;' class="big-font"
-                    href="https://github.com/adityaacodes">GitHub</a>""",
-                    unsafe_allow_html=True)
+        elif connect == "GitHub":
+            st.markdown(
+                """<a style='display: block; text-align: center;' class="big-font"
+                href="https://github.com/adityaacodes">GitHub</a>""",
+                unsafe_allow_html=True)
 
-            case "Twitter":
-                st.markdown(
-                    """<a style='display: block; text-align: center; class="big-font" 
-                    href="https://twitter.com/adityaacodes">Twitter</a>""",
-                    unsafe_allow_html=True)
+        elif connect == "Twitter":
+            st.markdown(
+                """<a style='display: block; text-align: center; class="big-font" 
+                href="https://twitter.com/adityaacodes">Twitter</a>""",
+                unsafe_allow_html=True)
 
 
 st.markdown("***")
